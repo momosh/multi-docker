@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t momosh/multi-client ./client
-  - docker build -t momosh/multi-nginx ./ngninx 
+  - docker build -t momosh/multi-nginx ./nginx 
   - docker build -t momosh/multi-server ./server 
   - docker build -t momosh/multi-worker ./worker 
   # Log in to the Docker CLI
